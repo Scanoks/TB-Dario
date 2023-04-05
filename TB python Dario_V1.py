@@ -25,7 +25,7 @@ betaf = 1e-4 / Pr_char      # Fluid compressibility, 1/Pa
 nx = 150                    # Number of grid points in x 
 ny = int(nx * Ly / Lx)      # Number of grid points in y  ## fix = int sur python
 nout = 100                  # Plot every nout time step
-st = 3               # Plot every st velocity
+st = 5               # Plot every st velocity
 niter = 1000
 #print('niter = ',niter)
 tol = 1e-6
@@ -105,7 +105,8 @@ for it in arr:
     T[0, :] = T[1, :]
     #time += dt
     if np.mod(it, nout) == 0: # postprocessing
-        print(it)
+        print(it,'it')
+        plt.clf()
         #data = np.transpose(T/deltaT)
         #im.set_data(data)
         plt.pcolor(x/Ly, y/Ly, T/deltaT)
@@ -132,17 +133,16 @@ for it in arr:
         plt.title(it)
         plt.xlabel('X')
         plt.ylabel('Y')
-
+        plt.title(f'Temperature at time: {it}')
         plt.draw()
-        #plt.colorbar()
-        #plt.pause(0.001)
+        plt.colorbar()
+        plt.pause(0.001)
         plt.show()
 
         
 """         plt.figure(figsize=(10, 6))
         plt.pcolormesh(x/Ly, y/Ly, np.transpose(T/deltaT), shading='gouraud')
-        plt.colorbar()
-        plt.title(f'Temperature at time: {it*dt/time_char:.2f}')
+        plt.colorbar()  
         plt.axis('image')
         plt.quiver(x[1:-1:st, 1:-1:st]/Ly, y[1:-1:st, 1:-1:st]/Ly, qx[2::st, 1:-1:st], qy[1:-1:st, 2::st], color='black')
         plt.xlabel('X')
