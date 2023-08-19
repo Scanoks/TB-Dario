@@ -25,7 +25,7 @@ In this repository you can find:
 
 ## Darcy velocity
 * description
-q_x = -\frac{k}{\eta_f}\frac{\partial P_f}{\partial x}
+$q_x = -\frac{k}{\eta_f}\frac{\partial P_f}{\partial x}$
 
 ⤴️ [_back to content_](#content)
 
