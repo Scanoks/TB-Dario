@@ -17,14 +17,15 @@ In this repository you can find:
 - the code that allows the differences between the two main codes to be perceived [Python_Matlab_Comparator.py](link)
 
 # Code description
-* [Equation](#link)
-* [Equation](#link)
-* [Equation](#link)
-* [Equation](#link)
+* [Darcy velocity](#link)
+* [Compressible Mass conservation](#link)
+* [Fluid pressure time update](#link)
+* [Temperature diffusion](#link)
+* [Temperature advection](#link)
 
-## Equation 1
+## Darcy velocity
 * description
-* apparence de l equation
+q_x = -\frac{k}{\eta_f}\frac{\partial P_f}{\partial x}
 
 ⤴️ [_back to content_](#content)
 
