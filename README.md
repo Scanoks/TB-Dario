@@ -129,5 +129,9 @@ Figures compare four different variables from the Python and Matlab code. The cu
     <img src="D_Video.gif" alt="Figure 1" width="400" /> | <img src="D2_Video.gif" alt="Figure 1" width="400" />
 </div>
 
-
 ⤴️ [_back to code description_](#code-description)
+
+# Poster Scientifique
+<div style="display: flex;">
+    <img src="Poster_TB.jpg" alt="Figure 1" width="1000" />
+</div>
