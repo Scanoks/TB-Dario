@@ -103,9 +103,9 @@ T[:-1,:] -= dt * np.minimum(0, qx[1:-1,:]) * np.diff(T, axis=0) / dx
 
 ⤴️ [_back to content_](#content)
 # Résults
-* [Difference between Python and Matlab code](Difference-between-Python-and-Matlab-code)
-* [Dykes and Syls Code](link doc)
-* [Geothermal well](link doc)
+* [Difference between Python and Matlab code](TB_Dario_A.py)
+* [Dykes and Syls Code](TB_Dario_B.py)
+* [Geothermal well](TB_Dario_D.py)
 
 ## Difference between Python and Matlab code
 
