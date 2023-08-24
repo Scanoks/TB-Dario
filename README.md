@@ -5,7 +5,7 @@
 * [Objectives](#objectives)
 * [About this repository](#about-this-repository)
 * [Code description](#code-description)
-* [Résultats](#résultats)
+* [Résultats](#Résultats)
 
 # Objectives
 This contribution presents a translation work from a Matlab numerical code to Python and to represent some simulations of porous convection.
