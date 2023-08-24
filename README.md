@@ -5,21 +5,21 @@
 * [Objectives](#objectives)
 * [About this repository](#about-this-repository)
 * [Code description](#code-description)
-* [Résultats](#Résultats)
+* [Results](#Results)
 
 # Objectives
 This contribution presents a translation work from a Matlab numerical code to Python and to represent some simulations of porous convection.
 
 # About this repository
 In this repository you can find:
-- Python code [Python_porous convection.py](link)
-- Matlab code [Matlab_porous convection.m](link)
-- The code that compares the 2 results [Python_Matlab_Comparator.py](link)
+- Python code [Python_porous convection.py](Traduction_python.py)
+- Matlab code [Matlab_porous convection.m](master_2020_task22_porous_convection_v2.m)
+- The code that compares the 2 results [Python_Matlab_Comparator.py](benchmark_python_matlab_singletimestep.py)
 
 # Code description
-* [Linear Momentum conservation equation](#link)
-* [Mass conservation equatio](#link)
-* [Energy conservation equation](#link)
+* [Linear momentum conservation equation](#Linear-momentum-conservation-equation)
+* [Mass conservation equatio](#Mass-conservation-equation)
+* [Energy conservation equation](#Energy-conservation)
 
 ## Linear Momentum conservation equation
 ### Darcy velocity
@@ -49,7 +49,7 @@ dPfdt   = -(np.diff(qx, axis=0)/dx + np.diff(qy, axis=1)/dy)/betaf
 
 ⤴️ [_back to content_](#content)
 
-##  Continuity equation
+###  Continuity equation
 Evolution of pressure over time.
 
 $\Delta P_f = \frac{\Delta P_f}{\Delta t} \Delta t
@@ -67,8 +67,8 @@ if max_delta_Pf[len(max_delta_Pf)-1]/np.max(np.abs(Pf)) < tol:
 
 ⤴️ [_back to content_](#content)
 
-# Energy Conservation
-## Heat Diffusion equation
+## Energy conservation
+### Heat diffusion equation
 
 Diffusion corresponds to the transfer of heat without the movement of mass, thus not directly related to $qx$ and $qy$.
 
@@ -86,7 +86,7 @@ T[1:-1, 1:-1] += dTdt * dt
 
 ⤴️ [_back to content_](#content)
 
-## Heat Advection equation
+### Heat Advection equation
 
 Advection serves to ascertain the heat's propagation within our system. The Rayleigh number primarily determines which of the two, advection or diffusion, is expected to be dominant.
 
@@ -102,7 +102,7 @@ T[:-1,:] -= dt * np.minimum(0, qx[1:-1,:]) * np.diff(T, axis=0) / dx
 ```
 
 ⤴️ [_back to content_](#content)
-# Résults
+# Results
 * [Difference between Python and Matlab code](TB_Dario_A.py)
 * [Dykes and Syls Code](TB_Dario_B.py)
 * [Geothermal well](TB_Dario_D.py)
