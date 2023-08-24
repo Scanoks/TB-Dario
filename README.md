@@ -109,22 +109,14 @@ T[:-1,:] -= dt * np.minimum(0, qx[1:-1,:]) * np.diff(T, axis=0) / dx
 ## Difference between Python and Matlab code
 
 <div style="display: flex;">
-    <img src="images_Python\it_3000.png" alt="Figure 1" width="300" />
+    <img src="it_3000.png" alt="Figure 1" width="3000" />
 </div>
 
 Figures compare four different variables from the Python and Matlab code. The curves correspond to the horizontal flux $qx$ and vertical flux $qy$, fluid pressure $P_f$, and temperature $T$, which have been normalized by their characteristic values ($q_c$, $P_c$, and $T_c$). Consequently, differences are observed on a scale of up to 10e-14. Thus, they can be considered negligible, highlighting the accuracy of the Matlab code translation.
 
 ## Different heat intrusion situation
 
-* variante A
-vidéo
-* variante B
-vidéo
-* variante C
-vidéo
-* variante D
-vidéo
-* variante E
-vidéo
+
+</"A_Video.mp4">
 
 ⤴️ [_back to code description_](#code-description)
