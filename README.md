@@ -12,8 +12,8 @@ This contribution presents a translation work from a Matlab numerical code to Py
 
 # About this repository
 In this repository you can find:
-- Python code [Python_porous convection.py](Traduction_python.py)
-- Matlab code [Matlab_porous convection.m](master_2020_task22_porous_convection_v2.m)
+- Python code [Python_porous convection.py](Codes/Traduction_python.py)
+- Matlab code [Matlab_porous convection.m](Codes/master_2020_task22_porous_convection_v2.m)
 - The code that compares the 2 results [Python_Matlab_Comparator.py](benchmark_python_matlab_singletimestep.py)
 
 # Code description
@@ -103,9 +103,9 @@ T[:-1,:] -= dt * np.minimum(0, qx[1:-1,:]) * np.diff(T, axis=0) / dx
 
 ⤴️ [_back to content_](#content)
 # Results
-* [Difference between Python and Matlab code](TB_Dario_A.py)
-* [Dykes and Syls Code](TB_Dario_B.py)
-* [Geothermal well](TB_Dario_D.py)
+* [Difference between Python and Matlab code](Codes/TB_Dario_A.py)
+* [Dykes and Syls Code](Codes/TB_Dario_B.py)
+* [Geothermal well](Codes/TB_Dario_D.py)
 
 ## Difference between Python and Matlab code
 
@@ -119,19 +119,19 @@ Figures compare four different variables from the Python and Matlab code. The cu
 ### Dykes and Syls
 
 <div style="display: flex;">
-    <img src="A_Video.gif" alt="Figure 1" width="400" /> | <img src="B_Video.gif" alt="Figure 1" width="400" />
+    <img src="videos/A_Video.gif" alt="Figure 1" width="400" /> | <img src="videos/B_Video.gif" alt="Figure 1" width="400" />
 </div>
 
 ### Geothermal well with different Rayleigh
 * Ra = 1e6 (left) 
 * Ra = 1e5 (right)
 <div style="display: flex;">
-    <img src="D_Video.gif" alt="Figure 1" width="400" /> | <img src="D2_Video.gif" alt="Figure 1" width="400" />
+    <img src="videos/D_Video.gif" alt="Figure 1" width="400" /> | <img src="videos/D2_Video.gif" alt="Figure 1" width="400" />
 </div>
 
 ⤴️ [_back to code description_](#code-description)
 
 # Poster Scientifique
 <div style="display: flex;">
-    <img src="Poster_TB.jpg" alt="Figure 1" width="1000" />
+    <img src="videos/Poster_TB.jpg" alt="Figure 1" width="1000" />
 </div>
