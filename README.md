@@ -1,4 +1,4 @@
-# "Numerical modeling of porous convection and translating MATLAB to Python
+# Numerical modeling of porous convection and translating MATLAB to Python
 
 # Content
 
