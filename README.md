@@ -1,4 +1,4 @@
-# Heat Transfert polar convection 
+# Porous convection
 
 # Content
 
