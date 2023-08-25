@@ -1,4 +1,4 @@
-# Porous convection
+# "Numerical modeling of porous convection and translating MATLAB to Python
 
 # Content
 
@@ -133,5 +133,5 @@ Figures compare four different variables from the Python and Matlab code. The cu
 
 # Poster Scientifique
 <div style="display: flex;">
-    <img src="videos/Poster_TB.jpg" alt="Figure 1" width="1000" />
+    <img src="TB/Poster_TB.jpg" alt="Figure 1" width="1000" />
 </div>
